@@ -1,8 +1,5 @@
 import SwiftUI
 
-struct TabConstants {
-    static let routesTab = NSLocalizedString("Routes", comment: "")
-}
 
 struct ContentView: View {
     var body: some View {
