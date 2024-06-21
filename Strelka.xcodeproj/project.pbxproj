@@ -14,9 +14,10 @@
 		FBB2AD2D2C259C9400F698DC /* StrelkaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD2C2C259C9400F698DC /* StrelkaTests.swift */; };
 		FBB2AD372C259C9400F698DC /* StrelkaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD362C259C9400F698DC /* StrelkaUITests.swift */; };
 		FBB2AD392C259C9400F698DC /* StrelkaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD382C259C9400F698DC /* StrelkaUITestsLaunchTests.swift */; };
-		FBB2AD4B2C259EF700F698DC /* RoutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD4A2C259EF700F698DC /* RoutesView.swift */; };
-		FBB2AD4E2C25A1EA00F698DC /* TabConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD4D2C25A1EA00F698DC /* TabConstants.swift */; };
+		FBB2AD4B2C259EF700F698DC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD4A2C259EF700F698DC /* MapView.swift */; };
 		FBB2AD522C25A21800F698DC /* MapKit + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD512C25A21800F698DC /* MapKit + Extensions.swift */; };
+		FBB2AD552C25C61E00F698DC /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD542C25C61E00F698DC /* Tab.swift */; };
+		FBB2AD582C25D16A00F698DC /* RoutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD572C25D16A00F698DC /* RoutesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +48,10 @@
 		FBB2AD322C259C9400F698DC /* StrelkaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrelkaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB2AD362C259C9400F698DC /* StrelkaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrelkaUITests.swift; sourceTree = "<group>"; };
 		FBB2AD382C259C9400F698DC /* StrelkaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrelkaUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FBB2AD4A2C259EF700F698DC /* RoutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesView.swift; sourceTree = "<group>"; };
-		FBB2AD4D2C25A1EA00F698DC /* TabConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabConstants.swift; sourceTree = "<group>"; };
+		FBB2AD4A2C259EF700F698DC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		FBB2AD512C25A21800F698DC /* MapKit + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapKit + Extensions.swift"; sourceTree = "<group>"; };
+		FBB2AD542C25C61E00F698DC /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		FBB2AD572C25D16A00F698DC /* RoutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,8 @@
 		FBB2AD472C259DF100F698DC /* App */ = {
 			isa = PBXGroup;
 			children = (
+				FBB2AD562C25D15F00F698DC /* Views */,
+				FBB2AD532C25C61600F698DC /* Models */,
 				FBB2AD4C2C25A1D700F698DC /* Helpers */,
 				FBB2AD492C259EE200F698DC /* RoutesScreen */,
 				FBB2AD482C259DFA00F698DC /* Core */,
@@ -170,7 +174,7 @@
 		FBB2AD492C259EE200F698DC /* RoutesScreen */ = {
 			isa = PBXGroup;
 			children = (
-				FBB2AD4A2C259EF700F698DC /* RoutesView.swift */,
+				FBB2AD4A2C259EF700F698DC /* MapView.swift */,
 			);
 			path = RoutesScreen;
 			sourceTree = "<group>";
@@ -187,7 +191,6 @@
 		FBB2AD4F2C25A1FE00F698DC /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				FBB2AD4D2C25A1EA00F698DC /* TabConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -198,6 +201,22 @@
 				FBB2AD512C25A21800F698DC /* MapKit + Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FBB2AD532C25C61600F698DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBB2AD542C25C61E00F698DC /* Tab.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FBB2AD562C25D15F00F698DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FBB2AD572C25D16A00F698DC /* RoutesView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,9 +350,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBB2AD1E2C259C9200F698DC /* ContentView.swift in Sources */,
-				FBB2AD4E2C25A1EA00F698DC /* TabConstants.swift in Sources */,
-				FBB2AD4B2C259EF700F698DC /* RoutesView.swift in Sources */,
+				FBB2AD4B2C259EF700F698DC /* MapView.swift in Sources */,
+				FBB2AD552C25C61E00F698DC /* Tab.swift in Sources */,
 				FBB2AD1C2C259C9200F698DC /* StrelkaApp.swift in Sources */,
+				FBB2AD582C25D16A00F698DC /* RoutesView.swift in Sources */,
 				FBB2AD522C25A21800F698DC /* MapKit + Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
