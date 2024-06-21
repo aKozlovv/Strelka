@@ -7,8 +7,12 @@ struct RoutesView: View {
                 Text("Your routes")
                     .font(.title.bold().smallCaps())
                     .foregroundStyle(.secondary)
+                
                 Spacer()
-                Button {} label: {
+                
+                Button {
+                    
+                } label: {
                     Image(systemName: "plus")
                         .bold()
                 }
