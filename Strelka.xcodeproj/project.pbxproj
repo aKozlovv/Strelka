@@ -153,11 +153,10 @@
 		FBB2AD472C259DF100F698DC /* App */ = {
 			isa = PBXGroup;
 			children = (
+				FBB2AD482C259DFA00F698DC /* Core */,
 				FBB2AD562C25D15F00F698DC /* Views */,
 				FBB2AD532C25C61600F698DC /* Models */,
 				FBB2AD4C2C25A1D700F698DC /* Helpers */,
-				FBB2AD492C259EE200F698DC /* RoutesScreen */,
-				FBB2AD482C259DFA00F698DC /* Core */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -169,14 +168,6 @@
 				FBB2AD1D2C259C9200F698DC /* ContentView.swift */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		FBB2AD492C259EE200F698DC /* RoutesScreen */ = {
-			isa = PBXGroup;
-			children = (
-				FBB2AD4A2C259EF700F698DC /* MapView.swift */,
-			);
-			path = RoutesScreen;
 			sourceTree = "<group>";
 		};
 		FBB2AD4C2C25A1D700F698DC /* Helpers */ = {
@@ -214,6 +205,7 @@
 		FBB2AD562C25D15F00F698DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FBB2AD4A2C259EF700F698DC /* MapView.swift */,
 				FBB2AD572C25D16A00F698DC /* RoutesView.swift */,
 			);
 			path = Views;
