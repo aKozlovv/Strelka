@@ -14,6 +14,7 @@
 		FBB2AD2D2C259C9400F698DC /* StrelkaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD2C2C259C9400F698DC /* StrelkaTests.swift */; };
 		FBB2AD372C259C9400F698DC /* StrelkaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD362C259C9400F698DC /* StrelkaUITests.swift */; };
 		FBB2AD392C259C9400F698DC /* StrelkaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD382C259C9400F698DC /* StrelkaUITestsLaunchTests.swift */; };
+		FBB2AD4B2C259EF700F698DC /* RoutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD4A2C259EF700F698DC /* RoutesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		FBB2AD322C259C9400F698DC /* StrelkaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrelkaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB2AD362C259C9400F698DC /* StrelkaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrelkaUITests.swift; sourceTree = "<group>"; };
 		FBB2AD382C259C9400F698DC /* StrelkaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrelkaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBB2AD4A2C259EF700F698DC /* RoutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		FBB2AD472C259DF100F698DC /* App */ = {
 			isa = PBXGroup;
 			children = (
+				FBB2AD492C259EE200F698DC /* RoutesScreen */,
 				FBB2AD482C259DFA00F698DC /* Core */,
 			);
 			path = App;
@@ -157,6 +160,14 @@
 				FBB2AD1D2C259C9200F698DC /* ContentView.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		FBB2AD492C259EE200F698DC /* RoutesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FBB2AD4A2C259EF700F698DC /* RoutesView.swift */,
+			);
+			path = RoutesScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBB2AD1E2C259C9200F698DC /* ContentView.swift in Sources */,
+				FBB2AD4B2C259EF700F698DC /* RoutesView.swift in Sources */,
 				FBB2AD1C2C259C9200F698DC /* StrelkaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
