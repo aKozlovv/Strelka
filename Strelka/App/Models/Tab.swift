@@ -1,4 +1,4 @@
-enum Tab: String {
+enum Tab: String, CaseIterable {
     case routes = "Routes"
 }
 
