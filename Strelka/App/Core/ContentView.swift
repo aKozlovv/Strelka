@@ -1,14 +1,20 @@
 import SwiftUI
 
+struct TabConstants {
+    static let routesTab = NSLocalizedString("Routes", comment: "")
+}
+
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            RoutesView()
+                .tag(1)
+                .tabItem {
+                    Image(systemName: "hare")
+                    Text(TabConstants.routesTab)
+                }
         }
-        .padding()
+        .tint(.accentColor)
     }
 }
 
