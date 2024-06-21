@@ -1,14 +1,21 @@
 import SwiftUI
 
+
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            MapView()
+                .tag(1)
         }
-        .padding()
+        .tint(.accentColor)
+        .sheet(isPresented: .constant(true)) {
+            RoutesView()
+                .interactiveDismissDisabled()
+                .presentationDetents([.height(70), .medium, .large])
+                .presentationCornerRadius(20)
+                .presentationBackground(.regularMaterial)
+                .presentationBackgroundInteraction(.enabled(upThrough: .large))
+        }
     }
 }
 
