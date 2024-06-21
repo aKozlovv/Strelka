@@ -28,11 +28,56 @@ struct RoutesView: View {
                 }
                 .padding(.all, 25)
             }
+            .interactiveDismissDisabled()
             .presentationDetents([.height(70), .medium, .large])
             .presentationCornerRadius(20)
             .presentationBackground(.regularMaterial)
             .presentationBackgroundInteraction(.enabled(upThrough: .large))
         }
+    }
+}
+
+
+extension View {
+    @ViewBuilder
+    func botomSheet<Content: View>(
+        presentationDetents: Set<PresentationDetent>,
+        isPresented: Binding<Bool>,
+        indicatorVisibility: Visibility = .visible,
+        sheetCornerRadius: CGFloat = 20,
+        largestUndimmedIdentifier: UISheetPresentationController.Detent.Identifier = .large,
+        isTransparent: Bool = true,
+        interactiveDisabled: Bool = true,
+        @ViewBuilder content: @escaping () -> Content,
+        onDismiss: @escaping () -> Void
+    ) -> some View {
+        self
+            .sheet(isPresented: isPresented, onDismiss: { onDismiss() }) {
+                content()
+                    .presentationDetents(presentationDetents)
+                    .presentationDragIndicator(indicatorVisibility)
+                    .interactiveDismissDisabled(interactiveDisabled)
+                    .presentationBackgroundInteraction(.enabled)
+                    .onAppear {
+                        guard let windows = UIApplication.shared.connectedScenes.first as? UIWindowScene else {
+                            return
+                        }
+                        
+                        if let controller = windows.windows.first?.rootViewController?.presentedViewController,
+                           let sheet = controller.sheetPresentationController {
+                            
+                            if isTransparent {
+                                controller.view.backgroundColor = .clear
+                            }
+                            
+                            
+                            controller.presentingViewController?.view.tintAdjustmentMode = .normal
+                            
+                            sheet.largestUndimmedDetentIdentifier = largestUndimmedIdentifier
+                            sheet.preferredCornerRadius = sheetCornerRadius
+                        }
+                    }
+            }
     }
 }
 
