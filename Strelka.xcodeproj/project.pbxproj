@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB4377012C2626BE00F8E4F6 /* StrelkaHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4377002C2626BE00F8E4F6 /* StrelkaHeader.swift */; };
+		FB4377062C2629E900F8E4F6 /* StrelkaSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4377052C2629E900F8E4F6 /* StrelkaSheet.swift */; };
 		FBB2AD1C2C259C9200F698DC /* StrelkaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD1B2C259C9200F698DC /* StrelkaApp.swift */; };
 		FBB2AD1E2C259C9200F698DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD1D2C259C9200F698DC /* ContentView.swift */; };
 		FBB2AD202C259C9400F698DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB2AD1F2C259C9400F698DC /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		FB4377002C2626BE00F8E4F6 /* StrelkaHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrelkaHeader.swift; sourceTree = "<group>"; };
+		FB4377052C2629E900F8E4F6 /* StrelkaSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrelkaSheet.swift; sourceTree = "<group>"; };
 		FBB2AD182C259C9200F698DC /* Strelka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strelka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB2AD1B2C259C9200F698DC /* StrelkaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrelkaApp.swift; sourceTree = "<group>"; };
 		FBB2AD1D2C259C9200F698DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +89,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB4377022C2627D800F8E4F6 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FBB2AD1B2C259C9200F698DC /* StrelkaApp.swift */,
+				FBB2AD1D2C259C9200F698DC /* ContentView.swift */,
+				FBB2AD562C25D15F00F698DC /* Views */,
+				FBCB0EF42C25EBB00040A77E /* ViewModels */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FB4377032C2628A100F8E4F6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FBCB0EF22C25EB720040A77E /* LocationService.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FB4377042C2628A500F8E4F6 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FBB2AD542C25C61E00F698DC /* Tab.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		FBB2AD0F2C259C9200F698DC = {
 			isa = PBXGroup;
 			children = (
@@ -161,11 +190,10 @@
 		FBB2AD472C259DF100F698DC /* App */ = {
 			isa = PBXGroup;
 			children = (
-				FBCB0EF42C25EBB00040A77E /* ViewModels */,
 				FBB2AD482C259DFA00F698DC /* Core */,
-				FBB2AD562C25D15F00F698DC /* Views */,
-				FBB2AD532C25C61600F698DC /* Models */,
-				FBB2AD4C2C25A1D700F698DC /* Helpers */,
+				FB4377042C2628A500F8E4F6 /* Domain */,
+				FB4377032C2628A100F8E4F6 /* Data */,
+				FB4377022C2627D800F8E4F6 /* Presentation */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -173,20 +201,10 @@
 		FBB2AD482C259DFA00F698DC /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				FBB2AD1B2C259C9200F698DC /* StrelkaApp.swift */,
-				FBB2AD1D2C259C9200F698DC /* ContentView.swift */,
+				FBB2AD4F2C25A1FE00F698DC /* Constants */,
+				FBB2AD502C25A20500F698DC /* Extensions */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		FBB2AD4C2C25A1D700F698DC /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				FBCB0EF12C25EB680040A77E /* Services */,
-				FBB2AD502C25A20500F698DC /* Extensions */,
-				FBB2AD4F2C25A1FE00F698DC /* Constants */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		FBB2AD4F2C25A1FE00F698DC /* Constants */ = {
@@ -204,14 +222,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		FBB2AD532C25C61600F698DC /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FBB2AD542C25C61E00F698DC /* Tab.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		FBB2AD562C25D15F00F698DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,16 +229,9 @@
 				FBB2AD572C25D16A00F698DC /* RoutesView.swift */,
 				FBCB0EF92C2610190040A77E /* StrelkaRouteCard.swift */,
 				FB4377002C2626BE00F8E4F6 /* StrelkaHeader.swift */,
+				FB4377052C2629E900F8E4F6 /* StrelkaSheet.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		FBCB0EF12C25EB680040A77E /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				FBCB0EF22C25EB720040A77E /* LocationService.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		FBCB0EF42C25EBB00040A77E /* ViewModels */ = {
@@ -375,6 +378,7 @@
 				FBB2AD4B2C259EF700F698DC /* StrelkaMap.swift in Sources */,
 				FBB2AD552C25C61E00F698DC /* Tab.swift in Sources */,
 				FBB2AD1C2C259C9200F698DC /* StrelkaApp.swift in Sources */,
+				FB4377062C2629E900F8E4F6 /* StrelkaSheet.swift in Sources */,
 				FBCB0EFA2C2610190040A77E /* StrelkaRouteCard.swift in Sources */,
 				FBB2AD582C25D16A00F698DC /* RoutesView.swift in Sources */,
 				FBB2AD522C25A21800F698DC /* MapKit + Extensions.swift in Sources */,

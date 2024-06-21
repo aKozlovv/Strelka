@@ -14,12 +14,13 @@ public struct StrelkaMap: View {
             Marker("Mok", coordinate: .mokLocation)
                 .tint(.accent)
         }
-        .mapStyle(.standard(elevation: .realistic))
         .mapControls {
             MapCompass()
             MapUserLocationButton()
             MapPitchToggle()
         }
+        .mapStyle(.standard(elevation: .realistic))
+        
     }
 }
 
