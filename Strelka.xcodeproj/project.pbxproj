@@ -75,8 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				FBB2AD1A2C259C9200F698DC /* Strelka */,
-				FBB2AD2B2C259C9400F698DC /* StrelkaTests */,
-				FBB2AD352C259C9400F698DC /* StrelkaUITests */,
 				FBB2AD192C259C9200F698DC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,10 +92,9 @@
 		FBB2AD1A2C259C9200F698DC /* Strelka */ = {
 			isa = PBXGroup;
 			children = (
-				FBB2AD1B2C259C9200F698DC /* StrelkaApp.swift */,
-				FBB2AD1D2C259C9200F698DC /* ContentView.swift */,
-				FBB2AD1F2C259C9400F698DC /* Assets.xcassets */,
-				FBB2AD212C259C9400F698DC /* Preview Content */,
+				FBB2AD462C259DDD00F698DC /* Assets */,
+				FBB2AD472C259DF100F698DC /* App */,
+				FBB2AD452C259DD200F698DC /* Tests */,
 			);
 			path = Strelka;
 			sourceTree = "<group>";
@@ -125,6 +122,41 @@
 				FBB2AD382C259C9400F698DC /* StrelkaUITestsLaunchTests.swift */,
 			);
 			path = StrelkaUITests;
+			sourceTree = "<group>";
+		};
+		FBB2AD452C259DD200F698DC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FBB2AD2B2C259C9400F698DC /* StrelkaTests */,
+				FBB2AD352C259C9400F698DC /* StrelkaUITests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		FBB2AD462C259DDD00F698DC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FBB2AD1F2C259C9400F698DC /* Assets.xcassets */,
+				FBB2AD212C259C9400F698DC /* Preview Content */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FBB2AD472C259DF100F698DC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FBB2AD482C259DFA00F698DC /* Core */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FBB2AD482C259DFA00F698DC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FBB2AD1B2C259C9200F698DC /* StrelkaApp.swift */,
+				FBB2AD1D2C259C9200F698DC /* ContentView.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,7 +453,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Strelka/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Strelka/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = SSF8WW5R8M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -450,7 +482,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Strelka/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Strelka/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = SSF8WW5R8M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
