@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBB2AD1C2C259C9200F698DC /* StrelkaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD1B2C259C9200F698DC /* StrelkaApp.swift */; };
+		FBB2AD1E2C259C9200F698DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD1D2C259C9200F698DC /* ContentView.swift */; };
+		FBB2AD202C259C9400F698DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB2AD1F2C259C9400F698DC /* Assets.xcassets */; };
+		FBB2AD232C259C9400F698DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB2AD222C259C9400F698DC /* Preview Assets.xcassets */; };
+		FBB2AD2D2C259C9400F698DC /* StrelkaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD2C2C259C9400F698DC /* StrelkaTests.swift */; };
+		FBB2AD372C259C9400F698DC /* StrelkaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD362C259C9400F698DC /* StrelkaUITests.swift */; };
+		FBB2AD392C259C9400F698DC /* StrelkaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB2AD382C259C9400F698DC /* StrelkaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBB2AD292C259C9400F698DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBB2AD102C259C9200F698DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBB2AD172C259C9200F698DC;
+			remoteInfo = Strelka;
+		};
+		FBB2AD332C259C9400F698DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBB2AD102C259C9200F698DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBB2AD172C259C9200F698DC;
+			remoteInfo = Strelka;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBB2AD182C259C9200F698DC /* Strelka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strelka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB2AD1B2C259C9200F698DC /* StrelkaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrelkaApp.swift; sourceTree = "<group>"; };
+		FBB2AD1D2C259C9200F698DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBB2AD1F2C259C9400F698DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBB2AD222C259C9400F698DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBB2AD282C259C9400F698DC /* StrelkaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrelkaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB2AD2C2C259C9400F698DC /* StrelkaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrelkaTests.swift; sourceTree = "<group>"; };
+		FBB2AD322C259C9400F698DC /* StrelkaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrelkaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB2AD362C259C9400F698DC /* StrelkaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrelkaUITests.swift; sourceTree = "<group>"; };
+		FBB2AD382C259C9400F698DC /* StrelkaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrelkaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBB2AD152C259C9200F698DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB2AD252C259C9400F698DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB2AD2F2C259C9400F698DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBB2AD0F2C259C9200F698DC = {
+			isa = PBXGroup;
+			children = (
+				FBB2AD1A2C259C9200F698DC /* Strelka */,
+				FBB2AD2B2C259C9400F698DC /* StrelkaTests */,
+				FBB2AD352C259C9400F698DC /* StrelkaUITests */,
+				FBB2AD192C259C9200F698DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBB2AD192C259C9200F698DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBB2AD182C259C9200F698DC /* Strelka.app */,
+				FBB2AD282C259C9400F698DC /* StrelkaTests.xctest */,
+				FBB2AD322C259C9400F698DC /* StrelkaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBB2AD1A2C259C9200F698DC /* Strelka */ = {
+			isa = PBXGroup;
+			children = (
+				FBB2AD1B2C259C9200F698DC /* StrelkaApp.swift */,
+				FBB2AD1D2C259C9200F698DC /* ContentView.swift */,
+				FBB2AD1F2C259C9400F698DC /* Assets.xcassets */,
+				FBB2AD212C259C9400F698DC /* Preview Content */,
+			);
+			path = Strelka;
+			sourceTree = "<group>";
+		};
+		FBB2AD212C259C9400F698DC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBB2AD222C259C9400F698DC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBB2AD2B2C259C9400F698DC /* StrelkaTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBB2AD2C2C259C9400F698DC /* StrelkaTests.swift */,
+			);
+			path = StrelkaTests;
+			sourceTree = "<group>";
+		};
+		FBB2AD352C259C9400F698DC /* StrelkaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBB2AD362C259C9400F698DC /* StrelkaUITests.swift */,
+				FBB2AD382C259C9400F698DC /* StrelkaUITestsLaunchTests.swift */,
+			);
+			path = StrelkaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBB2AD172C259C9200F698DC /* Strelka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBB2AD3C2C259C9400F698DC /* Build configuration list for PBXNativeTarget "Strelka" */;
+			buildPhases = (
+				FBB2AD142C259C9200F698DC /* Sources */,
+				FBB2AD152C259C9200F698DC /* Frameworks */,
+				FBB2AD162C259C9200F698DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Strelka;
+			productName = Strelka;
+			productReference = FBB2AD182C259C9200F698DC /* Strelka.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBB2AD272C259C9400F698DC /* StrelkaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBB2AD3F2C259C9400F698DC /* Build configuration list for PBXNativeTarget "StrelkaTests" */;
+			buildPhases = (
+				FBB2AD242C259C9400F698DC /* Sources */,
+				FBB2AD252C259C9400F698DC /* Frameworks */,
+				FBB2AD262C259C9400F698DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBB2AD2A2C259C9400F698DC /* PBXTargetDependency */,
+			);
+			name = StrelkaTests;
+			productName = StrelkaTests;
+			productReference = FBB2AD282C259C9400F698DC /* StrelkaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBB2AD312C259C9400F698DC /* StrelkaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBB2AD422C259C9400F698DC /* Build configuration list for PBXNativeTarget "StrelkaUITests" */;
+			buildPhases = (
+				FBB2AD2E2C259C9400F698DC /* Sources */,
+				FBB2AD2F2C259C9400F698DC /* Frameworks */,
+				FBB2AD302C259C9400F698DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBB2AD342C259C9400F698DC /* PBXTargetDependency */,
+			);
+			name = StrelkaUITests;
+			productName = StrelkaUITests;
+			productReference = FBB2AD322C259C9400F698DC /* StrelkaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBB2AD102C259C9200F698DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FBB2AD172C259C9200F698DC = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					FBB2AD272C259C9400F698DC = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = FBB2AD172C259C9200F698DC;
+					};
+					FBB2AD312C259C9400F698DC = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = FBB2AD172C259C9200F698DC;
+					};
+				};
+			};
+			buildConfigurationList = FBB2AD132C259C9200F698DC /* Build configuration list for PBXProject "Strelka" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBB2AD0F2C259C9200F698DC;
+			productRefGroup = FBB2AD192C259C9200F698DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBB2AD172C259C9200F698DC /* Strelka */,
+				FBB2AD272C259C9400F698DC /* StrelkaTests */,
+				FBB2AD312C259C9400F698DC /* StrelkaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBB2AD162C259C9200F698DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB2AD232C259C9400F698DC /* Preview Assets.xcassets in Resources */,
+				FBB2AD202C259C9400F698DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB2AD262C259C9400F698DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB2AD302C259C9400F698DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBB2AD142C259C9200F698DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB2AD1E2C259C9200F698DC /* ContentView.swift in Sources */,
+				FBB2AD1C2C259C9200F698DC /* StrelkaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB2AD242C259C9400F698DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB2AD2D2C259C9400F698DC /* StrelkaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBB2AD2E2C259C9400F698DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB2AD372C259C9400F698DC /* StrelkaUITests.swift in Sources */,
+				FBB2AD392C259C9400F698DC /* StrelkaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBB2AD2A2C259C9400F698DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBB2AD172C259C9200F698DC /* Strelka */;
+			targetProxy = FBB2AD292C259C9400F698DC /* PBXContainerItemProxy */;
+		};
+		FBB2AD342C259C9400F698DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBB2AD172C259C9200F698DC /* Strelka */;
+			targetProxy = FBB2AD332C259C9400F698DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FBB2AD3A2C259C9400F698DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBB2AD3B2C259C9400F698DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBB2AD3D2C259C9400F698DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Strelka/Preview Content\"";
+				DEVELOPMENT_TEAM = SSF8WW5R8M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.Strelka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBB2AD3E2C259C9400F698DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Strelka/Preview Content\"";
+				DEVELOPMENT_TEAM = SSF8WW5R8M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.Strelka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBB2AD402C259C9400F698DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SSF8WW5R8M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.StrelkaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Strelka.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Strelka";
+			};
+			name = Debug;
+		};
+		FBB2AD412C259C9400F698DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SSF8WW5R8M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.StrelkaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Strelka.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Strelka";
+			};
+			name = Release;
+		};
+		FBB2AD432C259C9400F698DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SSF8WW5R8M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.StrelkaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Strelka;
+			};
+			name = Debug;
+		};
+		FBB2AD442C259C9400F698DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SSF8WW5R8M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.StrelkaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Strelka;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBB2AD132C259C9200F698DC /* Build configuration list for PBXProject "Strelka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB2AD3A2C259C9400F698DC /* Debug */,
+				FBB2AD3B2C259C9400F698DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBB2AD3C2C259C9400F698DC /* Build configuration list for PBXNativeTarget "Strelka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB2AD3D2C259C9400F698DC /* Debug */,
+				FBB2AD3E2C259C9400F698DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBB2AD3F2C259C9400F698DC /* Build configuration list for PBXNativeTarget "StrelkaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB2AD402C259C9400F698DC /* Debug */,
+				FBB2AD412C259C9400F698DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBB2AD422C259C9400F698DC /* Build configuration list for PBXNativeTarget "StrelkaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBB2AD432C259C9400F698DC /* Debug */,
+				FBB2AD442C259C9400F698DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBB2AD102C259C9200F698DC /* Project object */;
+}
