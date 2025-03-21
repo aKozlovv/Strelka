@@ -4,8 +4,8 @@ public extension Color {
     
     @MainActor
     enum Background {
-        static let primary: Color = .init(uiColor: .systemBackground)
-        static let secondary: Color = .init(uiColor: .secondarySystemBackground)
+        public static let primary: Color = .init(uiColor: .systemBackground)
+        public static let secondary: Color = .init(uiColor: .secondarySystemBackground)
     }
     
     @MainActor
