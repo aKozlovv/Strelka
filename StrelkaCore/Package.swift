@@ -6,16 +6,23 @@ import PackageDescription
 let package = Package(
     name: "StrelkaCore",
     platforms: [
-        .iOS(.v15)
+        .iOS(.v16)
     ],
     products: [
         .library(
             name: "StrelkaCore",
             targets: ["StrelkaCore"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/hmlongco/Navigator.git", from: "0.9.26")
+    ],
     targets: [
         .target(
-            name: "StrelkaCore"),
+            name: "StrelkaCore",
+            dependencies: [
+                .product(name: "NavigatorUI", package: "Navigator")
+            ]
+        ),
 
     ]
 )
